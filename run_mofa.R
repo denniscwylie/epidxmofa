@@ -1,16 +1,9 @@
 #!/usr/bin/env Rscript
 
 library(data.table)
-library(dplyr)
-library(ggplot2); theme_set(theme_bw())
 library(limma)  ## for removeBatchEffect
 library(matrixStats)
-library(MASS)
 library(MOFA2)
-library(pheatmap)
-library(scales)
-library(tidyr)
-library(WriteXLS)
 
 demo = readRDS("demo.rds")
 brNums = readRDS("brNums.rds")
